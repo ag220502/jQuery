@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1>jQuery Append Prepend Methods</h1>
+    <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+    </ol>
+    <br>
+    <button id="appendBtn">Append</button>
+    <button id="prependBtn">Prepend</button>
+    <script src="../jsFiles/jquery.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#appendBtn").click(function()
+            {
+                $("ol").append("<li>New List Item</li>")
+            });
+            $("#prependBtn").click(function()
+            {
+                $("ol").prepend("<li>New List Item</li>")
+            });
+        });
+    </script>
+</body>
+</html>

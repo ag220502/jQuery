@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!--------    Including JQuery File -->
+	<!--------    We can include it anywhere in head tag or before closing body tag-->
+	<script src="../jsFiles/jquery.js"></script>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<h1>jQuery</h1>
+	<div id="test1">
+		<h2>Test Box 1</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt odio accusantium culpa eligendi repellendus error!</p>
+	</div>
+	<div id="test2">
+		<h2>Test Box 2</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt odio accusantium culpa eligendi repellendus error!</p>
+	</div>
+	<ul id="list">
+		<li>Orange</li>
+		<li class="test">Banana</li>
+		<li>Grapes</li>
+		<li class="test">Apple</li>
+		<li>Guava</li>
+	</ul>
+	<div id="box">
+		<h2>Test Box</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+	</div>
+	<!---------------------Mouse Eventsn In JQuery------------------->
+	<!-- <script>
+		$(document).ready(function()
+		{
+            //----------------------------------------------
+            //When we click one time on element
+			$("#box").click(function(){
+                $(this).css("border","1px solid red");
+            })
+            //----------------------------------------------
+            //When we click two times on element
+			$("#box").dblclick(function(){
+                $(this).css("border","1px solid blue");
+            })
+            //----------------------------------------------
+            //When we right click on element
+			$("#box").contextmenu(function(){
+                $(this).css("background-color","red");
+            })
+            //----------------------------------------------
+            //When we enter mouse in area of element (Hovering)
+			$("#box").mouseenter(function(){
+                $(this).css("background-color","yellow");
+            })
+            //----------------------------------------------
+            //When we leave after entering in area of element (Hovering)
+			$("#box").mouseleave(function(){
+                $(this).css("background-color","blue");
+            })
+		})
+	</script> -->
+	<!---------------------Keyboard Events In JQuery------------------->
+	<script>
+		$(document).ready(function()
+		{
+			//----------------------------------------------
+            //When we press any keyboard key
+			$("body").keypress(function(){
+                $(this).css("background-color","orange");
+            })
+            //----------------------------------------------
+            //When we press any keyboard key and dont leave it
+			$("body").keydown(function(){
+                $(this).css("background-color","lightblue");
+            })
+            //----------------------------------------------
+            //When we leave keyboard key after pressing
+			$("body").keyup(function(){
+                $(this).css("background-color","green");
+            })
+            //----------------------------------------------
+		})
+	</script>
+</body>
+</html>
