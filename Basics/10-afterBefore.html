@@ -14,17 +14,22 @@
         <h2>Test Box</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid error saepe voluptate tenetur quia consectetur suscipit, delectus provident, autem dolor tempore fugit sequi commodi voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officia vel asperiores beatae, voluptas est labore ea voluptatibus sint veniam!</p>
     </div>
-    <!-- <ol>
-        <li>List Item 1</li>
-        <li>List Item 2</li>
-        <li>List Item 3</li>
-        <li>List Item 4</li>
-        <li>List Item 5</li>
-    </ol> -->
     <br>
     <button id="afterBtn">After</button>
     <button id="beforeBtn">Before</button>
-
     <script src="../jsFiles/jquery.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#afterBtn").click(function()
+            {
+                $("#box").after("<h1>After the div</h1>")
+            });
+            $("#beforeBtn").click(function()
+            {
+                $("#box").before("<h1>Before the div</h1>")
+            });
+        });
+    </script>
 </body>
 </html>
